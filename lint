@@ -1,0 +1,4 @@
+#!/bin/sh
+shellcheck lint
+black ./*.py
+pylint ./*.py
