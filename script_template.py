@@ -35,23 +35,8 @@ def signal_handler(signum, _):
 
 def register_signals(handler):
     signal_list = [
-        signal.SIGABRT,
-        signal.SIGALRM,
-        signal.SIGBUS,
-        signal.SIGFPE,
-        signal.SIGHUP,
-        signal.SIGILL,
         signal.SIGINT,
-        signal.SIGPIPE,
-        signal.SIGPROF,
-        signal.SIGQUIT,
-        signal.SIGSEGV,
-        signal.SIGSYS,
         signal.SIGTERM,
-        signal.SIGTRAP,
-        signal.SIGVTALRM,
-        signal.SIGXCPU,
-        signal.SIGXFSZ,
     ]
     for sig in signal_list:
         signal.signal(sig, handler)
