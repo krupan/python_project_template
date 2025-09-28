@@ -8,12 +8,12 @@ exits (especially if it exits early), and a cool debugging trick
 """
 import argparse
 import atexit
-import signal
-import os
-import traceback
 import logging
-import sys
+import os
 import pdb
+import signal
+import sys
+import traceback
 
 
 def configure_logging(level):
